@@ -250,11 +250,7 @@ position:relative;
 z-index:2;
 
 }
-img{
-max-width:100%;
-height:auto;
-display:block;
-}
+
 
 section{
 padding:80px 10%;
@@ -325,4 +321,5 @@ align-items:center;
 }
 
 }
+
 
