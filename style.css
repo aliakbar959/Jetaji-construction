@@ -1,0 +1,246 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+color:white;
+
+/* Background Image */
+background-image:url("building.png");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+/* Dark overlay so text is readable */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.75);
+z-index:-1;
+}
+
+/* HEADER */
+
+header{
+background:#0F0F0F;
+border-bottom:1px solid #C9A24A;
+padding:20px 8%;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:#C9A24A;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+}
+
+.nav-links li{
+margin-left:25px;
+}
+
+.nav-links a{
+color:#FFFFFF;
+text-decoration:none;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#C9A24A;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+}
+
+.hero-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero-logo{
+width:160px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#C9A24A;
+font-size:20px;
+}
+
+.hero h1{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#C9A24A;
+font-size:18px;
+}
+
+.hero button{
+margin-top:25px;
+padding:12px 30px;
+background:#C9A24A;
+border:none;
+color:#0F0F0F;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:#FFFFFF;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 10%;
+text-align:center;
+}
+
+section h2{
+margin-bottom:30px;
+color:#C9A24A;
+}
+
+
+/* SERVICES */
+
+.service-container{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.service-card{
+background:#1B1B1B;
+padding:30px;
+width:250px;
+border-radius:8px;
+border:1px solid #C9A24A;
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+}
+
+/* PROJECTS */
+
+.projects-container{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.project-card{
+width:250px;
+height:150px;
+background:#C9A24A;
+color:#0F0F0F;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:8px;
+font-weight:bold;
+}
+
+/* CONTACT FORM */
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:400px;
+margin:auto;
+}
+
+input, textarea{
+padding:10px;
+border:none;
+background:#1B1B1B;
+color:white;
+}
+
+form button{
+background:#C9A24A;
+color:#0F0F0F;
+border:none;
+padding:12px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+background:#000000;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+.contact-info{
+margin-top:10px;
+}
+
+.contact-info a{
+color:#C9A24A;
+text-decoration:none;
+}
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:30px;
+position:relative;
+z-index:2;
+}
